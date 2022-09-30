@@ -44,8 +44,9 @@ li {
   height: 120px;
   width: 100%;
   text-align: center;
-  position: fixed;
+  position: fixed;  
   z-index: 10;
+  border: 3px solid red;
 }
 
 #header .icon {
@@ -158,7 +159,6 @@ li {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #9BF9CC;
 }
 
 #logo h1 {
@@ -183,5 +183,7 @@ li {
 
 /* work */
 #work {
- padding-top: 50px;
+  height: 150px;
+ background-color: blue	;
+ border: 3px solid blue;
 }
