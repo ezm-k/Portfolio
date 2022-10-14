@@ -49,38 +49,28 @@
     </p>
     
     <div class="form">
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWL7oJ49di1cF3V_8kh1LnnsgofnizjnFB9x1Wmjq3PPlMCQ/formResponse" 
+      <form 
+      action="mail.php"
       method="post" 
-      target="hidden_iframe"
-      onsubmit="submitted=true;" 
       class="input">
           <div>
               <label>お名前</label>
-              <input type="text" name="entry.2005620554" placeholder="江島慶俊" value="">
+              <input type="text" name="お名前" placeholder="江島慶俊" value="">
           </div>
           <div>
               <label>メールアドレス</label>
-              <input type="email" name="entry.1045781291" placeholder="sample@gmail.com" value="">
+              <input type="email" name="メールアドレス" placeholder="sample@gmail.com" value="">
           </div>
           <div>
               <label>件名</label>
-              <input type="text" name="entry.824389696" placeholder="" value="">
+              <input type="text" name="件名" placeholder="" value="">
           </div>
           <div>
               <label>お問い合わせ内容</label>
-              <textarea name="entry.839337160" rows="5" placeholder=""></textarea>
+              <textarea name="お問い合わせ内容" rows="5" placeholder=""></textarea>
           </div>
           <button class="confirm-btn" type="submit" name="">確認する</button>
       </form>
-      <script type="text/javascript">
-        var submitted = false;
-      </script>
-      <iframe
-        name="hidden_iframe"
-        id="hidden_iframe"
-        style="display: none"
-        onload="if(submitted)  {window.location='thanks.html';}"
-      ></iframe>
     </div>
   </div>
 
