@@ -43,33 +43,36 @@
   <div id="contact" class="wrapper">
     <p class="section-title">CONTACT</p>
 
-    <p class="contact-massage">
+    <p class="massage">
       Webサイトにご訪問していただき、ありがとうございます。<br>
       「お仕事のご相談」や「公演のご感想」など、どうぞお気軽にお送りください。
     </p>
     
     <div class="form">
       <form 
-      action="mail.php"
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetBksxrkDwtYEW4854F3R3PvecR7zmKzs1TI_Qk9nBYdy2cA/formResponse"
       method="post" 
-      class="input">
+      class="input"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+      >
           <div>
               <label>お名前</label>
-              <input type="text" name="お名前" placeholder="江島慶俊" value="">
+              <input type="text" name="entry.2005620554" placeholder="江島慶俊" value="">
           </div>
           <div>
               <label>メールアドレス</label>
-              <input type="email" name="メールアドレス" placeholder="sample@gmail.com" value="">
+              <input type="email" name="entry.1045781291" placeholder="sample@gmail.com" value="">
           </div>
           <div>
               <label>件名</label>
-              <input type="text" name="件名" placeholder="" value="">
+              <input type="text" name="entry.1166974658" placeholder="" value="">
           </div>
           <div>
               <label>お問い合わせ内容</label>
-              <textarea name="お問い合わせ内容" rows="5" placeholder=""></textarea>
+              <textarea  rows="5" name="entry.839337160" placeholder=""></textarea>
           </div>
-          <button class="confirm-btn" type="submit" name="">確認する</button>
+          <button class="confirm-btn" type="submit">送信する</button>
       </form>
     </div>
   </div>
@@ -80,6 +83,17 @@
     </small>
   </footer>
 
-<script src="js/main.js"></script>  
+  <script
+  src="js/main.js" 
+  type="text/javascript"
+  let submitted = false;
+  >
+</script>
+  <iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style="display: none"
+  onload="if(submitted){window.location='thanks.html';}"
+  ></iframe> 
 </body>
 </html>
